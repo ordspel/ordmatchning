@@ -49,7 +49,7 @@ body {
 /* --- Mobilanpassning: lite större rutor --- */
 @media (max-width: 480px) {
   #game {
-    grid-template-columns: repeat(4, 100px); /* 10px större */
+    grid-template-columns: repeat(4, 150px); /* 10px större */
     gap: 10px; /* lite mer mellanrum */
   }
 
