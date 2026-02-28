@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: lightgray;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.card.selected {
+  background: orange;
+}
+
+.card.correct {
+  background: lightgreen;
+}
+
+/* Flytta ner knappen lite */
+#test-button {
+  margin-top: 20px; /* justera värdet efter smak */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Fel-markering */
+.card.wrong {
+  background-color: red;
+  color: white;
+  transition: background-color 0.5s ease;
+}
