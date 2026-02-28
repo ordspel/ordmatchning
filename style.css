@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 #game {
   display: grid;
-  grid-template-columns: repeat(4, 120px);
+  grid-template-columns: repeat(4, 120px); /* desktop: 4 kolumner som original */
   gap: 10px;
   justify-content: center;
   margin-top: 30px;
@@ -17,6 +18,11 @@ body {
   cursor: pointer;
   border-radius: 8px;
   font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
 }
 
 .card.selected {
@@ -27,17 +33,34 @@ body {
   background: lightgreen;
 }
 
-/* Flytta ner knappen lite */
+.card.wrong {
+  background-color: red;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
 #test-button {
-  margin-top: 20px; /* justera värdet efter smak */
+  margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
-/* Fel-markering */
-.card.wrong {
-  background-color: red;
-  color: white;
-  transition: background-color 0.5s ease;
+/* --- Mobilanpassning: öka bara lite för små skärmar --- */
+@media (max-width: 480px) {
+  #game {
+    grid-template-columns: repeat(4, 90px); /* lite större än original, men inte jättestort */
+    gap: 8px;
+  }
+
+  .card {
+    padding: 18px;
+    font-size: 15px;
+    min-height: 75px;
+  }
+
+  #test-button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
 }
