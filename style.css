@@ -46,33 +46,5 @@ body {
   cursor: pointer;
 }
 
-/* --- Mobilanpassning: lite större rutor --- */
-@media (max-width: 480px) {
-  #game {
-    grid-template-columns: repeat(4, 100px); /* 10px större */
-    gap: 10px; /* lite mer mellanrum */
-  }
 
-  .card {
-    padding: 20px;     /* lite större padding */
-    font-size: 16px;   /* texten blir lite större */
-    min-height: 85px;  /* högre kort */
-  }
 
-  #test-button {
-    padding: 10px 20px; /* knapp lite större */
-    font-size: 16px;
-  }
-}
-
-/* Standard (laptop) */
-#game {
-  grid-template-columns: repeat(4, 120px);
-}
-
-/* Mobil */
-@media (max-width: 600px) {
-  #game {
-    grid-template-columns: repeat(4, 90px);
-  }
-}
