@@ -1,4 +1,4 @@
-body {
+body { 
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 10px;
@@ -7,43 +7,37 @@ body {
 #game {
   display: grid;
   grid-template-columns: repeat(4, 120px); /* desktop: 4 kolumner som original */
-  gap: 10px;
-  justify-content: center;
+  gap: 10px; 
+  ustify-content: center;
   margin-top: 30px;
 }
 
 .card {
   background: lightgray;
-  padding: 20px;
-  cursor: pointer;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
+  padding: 20px; cursor: pointer;
+  border-radius: 8px; font-weight: bold;
+  font-size: 16px; display: flex; align-items: center;
   justify-content: center;
   min-height: 44px;
 }
-
+  
 .card.selected {
   background: orange;
 }
-
+    
 .card.correct {
   background: lightgreen;
 }
 
 .card.wrong {
   background-color: red;
-  color: white;
-  transition: background-color 0.5s ease;
+  color: white; transition: background-color 0.5s ease;
 }
-
+  
 #test-button {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  font-size: 16px; cursor: pointer;
 }
 
 /* --- Mobilanpassning: lite större rutor --- */
@@ -52,13 +46,13 @@ body {
     grid-template-columns: repeat(4, 100px); /* 10px större */
     gap: 10px; /* lite mer mellanrum */
   }
-
+  
   .card {
-    padding: 20px;     /* lite större padding */
-    font-size: 16px;   /* texten blir lite större */
-    min-height: 85px;  /* högre kort */
+    padding: 20px; /* lite större padding */
+    font-size: 16px; /* texten blir lite större */
+    min-height: 85px; /* högre kort */
   }
-
+    
   #test-button {
     padding: 10px 20px; /* knapp lite större */
     font-size: 16px;
