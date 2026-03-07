@@ -8,7 +8,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 120px); /* desktop: 4 kolumner som original */
   gap: 10px; 
-  ustify-content: center;
+  justify-content: center;
   margin-top: 30px;
 }
 
