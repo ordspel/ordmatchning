@@ -65,9 +65,14 @@ body {
   }
 }
 
-/* Zooma ut lite på större skärmar */
-@media (min-width: 300px) {
-  body {
-    zoom: 0.4;
+/* Standard (laptop) */
+#game {
+  grid-template-columns: repeat(4, 120px);
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  #game {
+    grid-template-columns: repeat(4, 90px);
   }
 }
