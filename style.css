@@ -46,5 +46,16 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 900px) {
+  #game {
+    grid-template-columns: repeat(4, 90px);
+    gap: 8px;
+  }
 
+  .card {
+    padding: 12px;
+    font-size: 14px;
+    min-height: 36px;
+  }
+}
 
