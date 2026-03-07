@@ -66,7 +66,7 @@ body {
 }
 
 /* Zooma ut lite på större skärmar */
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   body {
     zoom: 0.6;
   }
