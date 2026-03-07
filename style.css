@@ -6,7 +6,7 @@ body {
 
 #game {
   display: grid;
-  grid-template-columns: repeat(4, 120px); /* desktop: 4 kolumner som original */
+  grid-template-columns: repeat(4, minmax(60px, 1fr));
   gap: 10px;
   justify-content: center;
   margin-top: 30px;
